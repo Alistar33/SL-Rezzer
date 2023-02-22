@@ -1,9 +1,5 @@
 integer listenHandle;
 
-remove_listen_handle()
-{
-    llListenRemove(listenHandle);
-}
 
 default
 {
@@ -17,7 +13,6 @@ default
 
       if (message == "die") llDie();
 
-        remove_listen_handle();
     }
 
     on_rez(integer start_param)
@@ -25,11 +20,5 @@ default
         llResetScript();
     }
 
-    changed(integer change)
-    {
-        if (change & CHANGED_OWNER)
-        {
-            llResetScript();
-        }
-    }
+
 }
