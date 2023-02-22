@@ -16,7 +16,6 @@ default
     {
 
       if (message == "die") llDie();
-        llOwnerSay("beep");
 
         remove_listen_handle();
     }
