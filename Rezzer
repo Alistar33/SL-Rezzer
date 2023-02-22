@@ -5,13 +5,13 @@ integer nt = 0;
 integer a = 0;
 string name = "";
 key kav = "";
-
+string delete ="Delete";
 default
 {
     touch_start(integer total_number)
     {
         kav = llDetectedKey(0);
-        obj = ["Delete"];
+        obj = [];
         nt = llGetInventoryNumber(INVENTORY_OBJECT);
         if (nt > 12)
         {
@@ -22,6 +22,7 @@ default
             name = llGetInventoryName(INVENTORY_OBJECT,a);
             obj = obj + [name];
         }
+        obj = obj + delete;
         llDialog(kav,"What choice?",obj, 6643);
         llListen(6643,"",NULL_KEY,"");
     }
