@@ -1,3 +1,5 @@
+// add this script inside the objects you want to add inside the rezzer
+
 integer listenHandle;
 
 
