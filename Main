@@ -1,3 +1,5 @@
+// Second Life Rezzer with menù made by Alistar Snook
+
 vector pos = <0,0,1>; //Here you can adjuste the position of the rezzed objects
 
 list obj = [];
