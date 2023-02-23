@@ -1,6 +1,6 @@
 # SL-Rezzer
 
-An easy example or rezzer in Second Life.
+An easy rezzer example in Second Life.
 
 1) Create an object called rezzer
 2) Add main.lsl script
